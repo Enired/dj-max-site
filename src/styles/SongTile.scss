@@ -1,0 +1,14 @@
+@import "global.scss";
+
+.SongTile {
+  border: 4px black solid;
+  width: 50%;
+  margin: 16px;
+  background-color: aliceblue;
+  h1 {
+    color: $h1FontColor;
+  }
+  h3{
+    color: $h3FontColor
+  }
+}

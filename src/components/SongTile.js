@@ -1,8 +1,8 @@
-
+import '../styles/SongTile.scss'
 
 const SongTile = (props) => {
   return (
-    <div>
+    <div className='SongTile'>
       <h1>{props.songName}</h1>
       <h3>{props.songArtist}</h3>
     </div>
