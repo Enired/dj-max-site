@@ -1,8 +1,8 @@
 const SongTile = (props) => {
   return (
     <div>
-      <h1>SongName</h1>
-      <h3>SongArtist</h3>
+      <h1>{props.songName}</h1>
+      <h3>{props.songArtist}</h3>
     </div>
   )
 }
