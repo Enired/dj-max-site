@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import SongTile from './components/songTile';
+import SongTile from './components/SongTile';
 
 
 const listOfSongObjTEST = () => {
