@@ -1,15 +1,31 @@
 @import "global.scss";
 
 .song-tile {
-  border: 4px $secondary-color solid;
-  width: 33%;
-  margin: 16px;
-  background-color: $background-color;
-  border-radius: 16px 0px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  background-color: #F44336;
+  color: #FFF;
+  position: relative;
+
+  .song-image {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+  }
+
+  .song-details {
+    font-family: 'Game-Font', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+  }
+
   h1 {
     color: $accent-color;
   }
-  h3{
+
+  h3 {
     color: $secondary-color
   }
 }
