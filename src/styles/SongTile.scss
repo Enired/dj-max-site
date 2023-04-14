@@ -1,31 +1,25 @@
 @import "global.scss";
 
 .song-tile {
-  border: 2px solid #333;
-  border-radius: 10px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
-  background-color: #F44336;
-  color: #FFF;
-  position: relative;
+  display: flex;
+  background-color: $primary-color;
+  border: solid 4px;
+  border-color: $accent-color;
+  margin: 4px;
+  min-width: 25vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
 
   .song-image {
-    background-size: cover;
-    background-position: center;
-    height: 200px;
+    width: 96%;
+    padding: 2% 2% 0% 2% ;
   }
 
   .song-details {
-    font-family: 'Game-Font', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px;
-  }
-
-  h1 {
-    color: $accent-color;
-  }
-
-  h3 {
-    color: $secondary-color
+    color: $secondary-color;
+    .song-name{
+      color: $main-font;
+    }
   }
 }
