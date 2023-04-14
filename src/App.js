@@ -7,8 +7,9 @@ const listOfSongObjTEST = () => {
   const songList = []
   for(let i=0; i<10; i++){
     const song = {
-      songName: `Song Name ${i}`,
-      songArtist: `Song Artist ${i}`
+      name: `Song Name ${i}`,
+      artist: `Song Artist ${i}`,
+      pack: `DLC: ${i}`
     }
 
     songList.push(song);
@@ -24,8 +25,8 @@ const App = () => {
 
   return (
     <div className="App">
-      {songList.map((e, index)=>{
-        return <SongTile songName={e.songName} songArtist={e.songArtist} key={index}/>
+      {songList.map((song, index)=>{
+        return <SongTile name={song.name} artist={song.artist} pack={song.pack} key={index}/>
       })}
     </div>
   );

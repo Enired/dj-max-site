@@ -1,14 +1,15 @@
 @import "global.scss";
 
-.SongTile {
-  border: 4px black solid;
-  width: 50%;
+.song-tile {
+  border: 4px $secondary-color solid;
+  width: 33%;
   margin: 16px;
-  background-color: aliceblue;
+  background-color: $background-color;
+  border-radius: 16px 0px;
   h1 {
-    color: $h1FontColor;
+    color: $accent-color;
   }
   h3{
-    color: $h3FontColor
+    color: $secondary-color
   }
 }
