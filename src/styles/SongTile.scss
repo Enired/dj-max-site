@@ -3,16 +3,19 @@
 .song-tile {
   display: flex;
   background-color: $primary-color;
-  border: solid 4px;
+  border-style: solid;
+  border-width: 16px 8px;
+  margin: 8px;
   border-color: $accent-color;
-  margin: 4px;
-  min-width: 25vw;
-  height: 100vh;
+  min-width: 100%;
+  min-height: 90%;
+  
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   .song-image {
-    width: 96%;
+    width: 100%;
     padding: 2% 2% 0% 2% ;
   }
 

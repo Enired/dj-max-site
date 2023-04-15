@@ -5,7 +5,7 @@ import SongTile from './components/SongTile';
 
 const listOfSongObjTEST = () => {
   const songList = []
-  for(let i=1; i<=5; i++){
+  for(let i=1; i<=10; i++){
     const song = {
       name: `Song Name ${i}`,
       artist: `Song Artist ${i}`,
