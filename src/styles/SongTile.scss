@@ -9,20 +9,36 @@
   border-color: $accent-color;
   min-width: 50%;
   max-height: 100%;
-  
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   .song-image {
-    width: 100%;
-    padding: 2% 2% 0% 2% ;
+    height: 50%;
+    max-width: 100%;
+    padding: 2% 2% 0% 2%;
   }
 
   .song-details {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
     color: $secondary-color;
-    .song-name{
+    width: 100%;
+    font-size: 30px;
+
+    .song-name {
+      width: 100%;
+      margin: 0;
       color: $main-font;
     }
+
+    p {
+      font-size: 20px;
+    }
+
   }
 }
