@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import SongTile from './components/SongTile';
+import Carousel from './components/Carousel';
 
 
 const listOfSongObjTEST = () => {
@@ -22,12 +23,13 @@ const listOfSongObjTEST = () => {
 const App = () => {
 
   const songList = listOfSongObjTEST();
+  const items = songList.map((song, index)=>{
+    return <SongTile name={song.name} artist={song.artist} pack={song.pack} key={index}/>
+  })
 
   return (
     <div className="App">
-      {songList.map((song, index)=>{
-        return <SongTile name={song.name} artist={song.artist} pack={song.pack} key={index}/>
-      })}
+      <Carousel items={items}/>
     </div>
   );
 }
