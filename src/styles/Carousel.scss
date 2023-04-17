@@ -1,0 +1,13 @@
+.carousel-item{
+  position: relative;
+
+  .x-button{
+    color: pink;
+    background-color: yellow;
+    position: absolute;
+    margin: 8px 16px;
+    right: 0;
+    top: 0;
+    font-size: 32px;
+  }
+}

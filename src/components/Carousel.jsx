@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/Carousel.scss'
 
 function Carousel(props) {
   const [currentItem, setCurrentItem] = useState(0);
@@ -23,8 +24,8 @@ function Carousel(props) {
     <div className="carousel" style={{ 'max-width': '50%' }}>
       <div className="carousel-item">
         {items[currentItem]}
+      <button className='x-button' onClick={() => handleRemove(currentItem)}>X</button>
       </div>
-      <button onClick={() => handleRemove(currentItem)}>Remove</button>
       <button style={{ width: '50%' }} onClick={handlePrev}>Prev</button>
       <button style={{ width: '50%' }} onClick={handleNext}>Next</button>
     </div>
