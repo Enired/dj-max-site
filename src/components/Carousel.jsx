@@ -3,7 +3,7 @@ import '../styles/Carousel.scss'
 
 function Carousel(props) {
   const [currentItem, setCurrentItem] = useState(0);
-  const [items, setItems] = useState(props.items)
+  const {items, setItems} = props
 
   function handleNext() {
     setCurrentItem(currentItem === items.length - 1 ? 0 : currentItem + 1);
