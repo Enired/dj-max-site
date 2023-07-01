@@ -21,12 +21,14 @@ const arrayOfDLCsTESTER = DLCArrayTest(10);
 const SelectDLCs = (props) =>{
 
   const [count, setCount] = useState(0);
+  const [list, setList] = useState([])
   
   return(
     <div>
       {count}
+      {list.map((e)=>{return <p>{e}</p>})}
       {arrayOfDLCsTESTER.map((dlc, index)=>{
-        return(<DLCCard key={index} count={count} setCount={setCount} name={dlc.name} releaseDate={dlc.releaseDate} selected={false}></DLCCard>)
+        return(<DLCCard key={index} count={count} setCount={setCount} list={list} setList={setList} name={dlc.name} releaseDate={dlc.releaseDate} selected={false}></DLCCard>)
       })}
 
     </div>

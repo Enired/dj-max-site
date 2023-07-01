@@ -4,18 +4,27 @@ import '../styles/DLCCards.scss';
 
 const DLCCard = (props) => {
   const [selected, setSelected] = useState(false)
+  const name = props.name || 'DLC NAME';
+  const releaseDate = props.releaseDate ? `Released: ${props.releaseDate}` : 'Released';
+
   useEffect(()=>{
     if(selected){
       props.setCount((prev)=>prev+1)
+      props.setList((prev)=>[...prev, name].sort())
     }
     else if(props.count>0 & !selected){
       props.setCount((prev)=>prev-1);
+      props.setList((prev)=>{
+        const index = prev.indexOf(name);
+        const newList = [...prev]
+        newList.splice(index,1);
+        return newList
+        // return prev
+      })
     }
   },[selected])
 
 
-  const name = props.name || 'DLC NAME';
-  const releaseDate = props.releaseDate ? `Released: ${props.releaseDate}` : 'Released';
 
   const changeSelected = () =>{
     setSelected(!selected);
