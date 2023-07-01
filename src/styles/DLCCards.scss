@@ -1,0 +1,33 @@
+.dlc-card {
+  display: flex;
+  align-items: center;
+  height: 25%;
+  opacity: 90%;
+
+
+
+  .image {
+    height: 200px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+
+    .title {
+      margin: 0;
+    }
+
+    .release-date {
+      margin: 0;
+      text-align: left;
+    }
+  }
+}
+
+.selected {
+  border: 10px solid rgba(50, 205, 50, 0.365);
+  background-color: greenyellow;
+  opacity: 100%;
+}
